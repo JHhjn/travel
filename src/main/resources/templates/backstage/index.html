@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>首页</title>
+    <th:block th:replace="/backstage/common_resources::common_css"/>
+    <th:block th:replace="/backstage/common_resources::common_js"/>
+</head>
+<body class="hold-transition skin-purple sidebar-mini">
+<!-- 页面头部，common_header代表引入文件名，header代表引入部分，~{}代表文件在resources目录下 -->
+<header th:replace="~{/backstage/common_header::header}"></header>
+<!-- 导航侧栏 -->
+<aside th:replace="~{/backstage/common_aside::aside}"></aside>
+<div class="wrapper">
+    <!-- 内容区域 -->
+    <div class="content-wrapper"></div>
+</div>
+<!-- 底部导航 -->
+<footer th:replace="~{/backstage/common_footer::footer}"></footer>
+</body>
+</html>

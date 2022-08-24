@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hniu.travel.mapper.AdminMapper">
+    <resultMap id="adminMap" type="com.hniu.travel.pojo.Admin">
+        <id property="aid" column="aid"></id>
+        <result property="username" column="username"></result>
+        <collection property="roles" column="aid" ofType="com.hniu.travel.pojo.Role">
+            <result property="roleName" column="roleName"></result>
+            <result property="roleDesc" column="roleDesc"></result>
+            <collection property="permissions" column="rid" ofType="com.hniu.travel.pojo.Permission">
+                <result property="permissionName" column="permissionName"></result>
+                <result property="permissionDesc" column="permissionDesc"></result>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <select id="findDesc" parameterType="int" resultMap="adminMap">
+        SELECT *
+        FROM admin
+                 LEFT JOIN admin_role
+                           ON admin.aid = admin_role.aid
+                 LEFT JOIN role
+                           ON admin_role.rid = role.rid
+                 LEFT JOIN role_permission
+                           ON role.rid = role_permission.rid
+                 LEFT JOIN permission
+                           ON role_permission.pid = permission.pid
+        WHERE admin.aid = #{aid}
+    </select>
+
+    <select id="findAllPermission" resultType="com.hniu.travel.pojo.Permission" parameterType="string">
+        SELECT DISTINCT permission.*
+        FROM admin
+                 LEFT JOIN admin_role
+                           ON admin.aid = admin_role.aid
+                 LEFT JOIN role
+                           ON admin_role.rid = role.rid
+                 LEFT JOIN role_permission
+                           ON role.rid = role_permission.rid
+                 LEFT JOIN permission
+                           ON role_permission.pid = permission.pid
+        WHERE admin.username = #{username}
+          AND permission.pid is not null
+    </select>
+</mapper>

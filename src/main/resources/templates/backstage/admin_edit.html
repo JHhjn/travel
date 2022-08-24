@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>用户修改</title>
+  <th:block th:replace="/backstage/common_resources::common_css"/>
+  <th:block th:replace="/backstage/common_resources::common_js"/>
+</head>
+<body class="hold-transition skin-purple sidebar-mini">
+<!-- 页面头部，common_header代表引入文件名，header代表引入部分，~{}代表文件在resources目录下 -->
+<header th:replace="~{/backstage/common_header::header}"></header>
+<!-- 导航侧栏 -->
+<aside th:replace="~{/backstage/common_aside::aside}"></aside>
+
+
+
+<div class="wrapper">
+
+  <!-- 内容区域 -->
+  <!-- @@master = admin-layout.html-->
+  <!-- @@block = content -->
+
+  <div class="content-wrapper">
+
+    <!-- 内容头部 -->
+    <section class="content-header">
+      <h1>
+        用户管理
+        <small>用户修改</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a th:href="@{/backstage/index}"><i class="fa fa-dashboard"></i> 首页</a></li>
+        <li><a th:href="@{/backstage/admin/all}">用户管理</a></li>
+        <li class="active">用户修改</li>
+      </ol>
+    </section>
+    <!-- 内容头部 /-->
+
+    <!-- 正文区域 -->
+    <section class="content">
+
+
+      <!--基础控件-->
+      <div class="tab-pane" id="tab-common">
+        <form th:action="@{/backstage/admin/update}" method="post">
+          <input type="hidden" name="aid" th:value="${admin.aid}">
+          <div class="row data-type">
+
+            <div class="col-md-2 title">用户名</div>
+            <div class="col-md-4 data">
+              <input type="text" class="form-control" th:value="${admin.username}" name="username" th:required>
+            </div>
+
+            <div class="col-md-2 title">密码</div>
+            <div class="col-md-4 data">
+              <input type="password" class="form-control" th:value="${admin.password}" name="password" th:required>
+            </div>
+
+            <div class="col-md-2 title">电话号码</div>
+            <div class="col-md-4 data">
+              <input type="text" class="form-control" th:value="${admin.phoneNum}" name="phoneNum" th:required>
+            </div>
+            <div class="col-md-2 title">邮箱</div>
+            <div class="col-md-4 data">
+              <input type="text" class="form-control" th:value="${admin.email}" name="email" th:required>
+            </div>
+            <div class="col-md-2 title">状态</div>
+            <div class="col-md-4 data">
+              <select class="form-control" name="status">
+                <option th:value="true"  th:selected="${admin.status}">开启</option>
+                <option th:value="false"  th:selected="${not admin.status}">关闭</option>
+              </select>
+            </div>
+
+            <div class="col-md-2 title"></div>
+            <div class="col-md-10 data text-center">
+              <button type="submit" class="btn bg-maroon">保存</button>
+              <button type="button" class="btn bg-default" onclick="history.back(-1);">返回</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+      <!--基础控件/-->
+
+
+    </section>
+    <!-- 正文区域 /-->
+
+  </div>
+  <!-- @@close -->
+  <!-- 内容区域 /-->
+</div>
+
+<!-- 底部导航 -->
+<footer th:replace="~{/backstage/common_footer::footer}"></footer>
+
+</body>
+</html>
