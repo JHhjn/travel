@@ -1,14 +1,17 @@
 package com.hniu.travel.controller.frontdesk;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.hniu.travel.pojo.Areas;
 import com.hniu.travel.pojo.Member;
 import com.hniu.travel.pojo.Product;
 import com.hniu.travel.service.ProductService;
+import com.hniu.travel.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
@@ -19,6 +22,8 @@ import java.util.List;
 public class FrontdeskProductController {
     @Autowired
     private ProductService productService;
+    @Autowired
+    private WeatherService weatherService;
 
     /**
      * 查询旅游线路
@@ -60,6 +65,7 @@ public class FrontdeskProductController {
         modelAndView.setViewName("/frontdesk/route_detail");
         return modelAndView;
     }
+
 
 
 }

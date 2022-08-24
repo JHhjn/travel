@@ -11,7 +11,7 @@
             height: 0px;
             /* background: url('../images/top (3).jpg') 100%; */
             border-top: 30px solid transparent;
-            border-image-source: url(../images/top1.jpeg);
+
             border-image-slice: 15 9 0 0;
             border-image-repeat: stretch;
         }
@@ -186,18 +186,20 @@
     <div class="header_wrap">
         <div class="topbar">
             <div class="logo">
-                <img src="/frontdesk/images/logo.png" alt="">
+
 
                 <div>
                     <div style="width:100px">
 						<span class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
-							北京
-                            <!-- <span class="caret"></span> -->
+							 <input id="cityName" type="text" list="cityNamelist" placeholder="北京" value="北京" style="padding:0.5em;border-radius:10px; border: none;">
+        <datalist id="cityNamelist">
+
+        </datalist>
 						</span>
                     </div>
                     <p class="city">
                         <span class="glyphicon glyphicon-map-marker"></span>
-                        当前城市
+                            当前位置
                     </p>
                 </div>
             </div>
@@ -223,7 +225,10 @@
         <ul class="nav"></ul>
     </div>
     <script>
+
         $(function (){
+
+
             $.get("/frontdesk/category/all",function (categories) {
                 var str = "<li class=\"nav-active\"><a href=\"/frontdesk/index\">首页</a></li>";
                 for (var i = 0 ; i <categories.length; i++){
@@ -231,6 +236,49 @@
                 }
                 $(".nav").html(str);
             })
+
+            $("#cityName").on("input",function () {
+
+               var cName=this.value;
+               var url="/frontdesk/weather/getAreas?cName="+cName;
+               $.get(url,function (Cities){
+                   var str='';
+                   for (let i = 0; i < Cities.length; i++) {
+                     str+="<option>"+Cities[i].cname+"</option>"
+                   }
+                   $("#cityNamelist").append(str);
+               })
+            });
+
+            $("#cityName").on("blur",function (){
+                var cName2=this.value;
+                var url="/frontdesk/weather/getCurrentWeather?cName="+cName2
+                $.get(url,function (weathers) {
+                    var province='';
+                    var city='';
+                    var temperature='';
+                    var weather=''
+                    if (weathers.length!=0){
+                        province=weathers[0].province+"省 ";
+                        city=weathers[0].city;
+                        temperature=weathers[0].temperature;
+                        weather=weathers[0].weather;
+                    }
+                    var text="";
+                    var list=["北京市","上海市","天津市","重庆市","内蒙古自治区","维吾尔自治区","西藏自治区","宁夏回族自治区","广西壮族自治区","香港特别行政区","澳门特别行政区"];
+                    var flag=false;
+                    for (let i = 0; i < list.length; i++) {
+                        if (list[i]==city)flag=true;
+                    }
+                    if (flag){
+                        text="当前位置："+city+" 天气："+weather+" 温度："+temperature;
+                    }else {
+                        text="当前位置："+province+city+" 天气："+weather+" 温度："+temperature;
+                    }
+                    $(".city").html(text);
+
+                })
+            });
         })
     </script>
 </header>

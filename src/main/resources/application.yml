@@ -42,3 +42,7 @@ mail:
 project:
   path: http://localhost
 #  path: http://192.168.66.100
+gaode:
+  url: https://restapi.amap.com/v3/weather/weatherInfo?
+  key: 2c0e577e3baba73721a77ba8d1da9031
+#高德key

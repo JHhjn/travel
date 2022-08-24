@@ -11,13 +11,14 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.UUID;
 
 @Service
 public class MemberService {
 
-    @Autowired
+    @Resource
     private MemberMapper mapper;
     @Autowired
     private BCryptPasswordEncoder encoder;
@@ -31,7 +32,7 @@ public class MemberService {
 
         //1注册
             //验证用户名是否重复
-            List<Member> usernames = mapper.selectList(new QueryWrapper<Member>().eq("username", member.getUsername()));
+        List<Member> usernames = mapper.selectList(new QueryWrapper<Member>().eq("username", member.getUsername()));
            if (usernames.size()>0)
                return new Result(false,"亲，用户名已存在，请重新输入正确的用户名");
 

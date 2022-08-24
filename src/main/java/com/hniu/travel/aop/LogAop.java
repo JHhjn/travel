@@ -21,7 +21,7 @@ public class LogAop {
     private HttpServletRequest request;
     private final static Logger logger =  LoggerFactory.getLogger(LogAop.class);
 
-    @Pointcut("execution(* com.hniu.travel.controller.backstage.*.*(..))")
+    @Pointcut("execution(* com.hniu.travel.controller.*.*.*(..))")
     public void pointCut(){}
 
     @Before("pointCut()")
