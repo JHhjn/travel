@@ -45,4 +45,16 @@
                            ON product.`pid` = favorite.`pid`
         WHERE favorite.`mid` = #{mid}
     </select>
+    <select id="findTour" resultType="com.hniu.travel.pojo.Product">
+        SELECT
+            *
+        FROM
+            product
+        WHERE
+            product.productName LIKE '%团%' AND
+            product.productName NOT LIKE '%节%'
+        ORDER BY
+            product.price DESC
+            LIMIT #{random},5
+    </select>
 </mapper>

@@ -1,0 +1,48 @@
+10:12:08.575 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 19180 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+10:12:08.577 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+10:12:09.917 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+10:12:09.926 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:12:09.927 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:12:09.928 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+10:12:10.032 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:12:10.032 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1407 ms
+10:12:11.405 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@67eec8e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4214ae8f, org.springframework.security.web.context.SecurityContextPersistenceFilter@79d3473e, org.springframework.security.web.header.HeaderWriterFilter@314a31b0, org.springframework.web.filter.CorsFilter@7ba93755, org.springframework.security.web.authentication.logout.LogoutFilter@5fcd1c5f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5af64ce0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27e2287c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f169009, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22dc59b2, org.springframework.security.web.session.SessionManagementFilter@59edb4f5, org.springframework.security.web.access.ExceptionTranslationFilter@5dfe23e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a464fa3]
+10:12:11.451 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:12:11.465 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+10:12:11.473 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.396 seconds (JVM running for 5.434)
+10:12:31.050 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:12:31.050 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:12:31.051 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:12:35.734 [http-nio-80-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:12:36.177 [http-nio-80-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:12:38.315 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/role/all, visitTime=Fri Aug 26 10:12:38 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=35, executionMessage=null)
+10:12:38.811 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/admin/all, visitTime=Fri Aug 26 10:12:38 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=8, executionMessage=null)
+10:12:39.873 [http-nio-80-exec-5] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/permission/all, visitTime=Fri Aug 26 10:12:39 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=9, executionMessage=null)
+10:13:10.512 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Fri Aug 26 10:13:10 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=23, executionMessage=null)
+10:13:11.509 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Fri Aug 26 10:13:11 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=9, executionMessage=null)
+10:13:12.238 [http-nio-80-exec-10] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Fri Aug 26 10:13:12 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=7, executionMessage=null)
+10:13:14.880 [http-nio-80-exec-3] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Fri Aug 26 10:13:14 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=10, executionMessage=null)
+10:13:45.256 [http-nio-80-exec-1] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/addPage, visitTime=Fri Aug 26 10:13:45 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=4, executionMessage=null)
+10:13:55.512 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Fri Aug 26 10:13:55 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=8, executionMessage=null)
+10:14:05.953 [http-nio-80-exec-5] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Fri Aug 26 10:14:05 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=5, executionMessage=null)
+10:14:11.008 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/product/routeList, visitTime=Fri Aug 26 10:14:10 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=16, executionMessage=null)
+10:14:11.128 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Fri Aug 26 10:14:11 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=4, executionMessage=null)
+10:14:12.050 [http-nio-80-exec-9] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Fri Aug 26 10:14:12 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=23, executionMessage=null)
+10:14:19.763 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/product/routeList, visitTime=Fri Aug 26 10:14:19 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=9, executionMessage=null)
+10:14:19.858 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Fri Aug 26 10:14:19 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=3, executionMessage=null)
+10:14:20.398 [http-nio-80-exec-10] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/product/routeList, visitTime=Fri Aug 26 10:14:20 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=6, executionMessage=null)
+10:14:20.508 [http-nio-80-exec-5] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Fri Aug 26 10:14:20 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=3, executionMessage=null)
+10:14:20.844 [http-nio-80-exec-1] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/product/routeList, visitTime=Fri Aug 26 10:14:20 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=8, executionMessage=null)
+10:14:20.934 [http-nio-80-exec-1] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Fri Aug 26 10:14:20 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=3, executionMessage=null)
+10:14:21.238 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/product/routeList, visitTime=Fri Aug 26 10:14:21 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=12, executionMessage=null)
+10:14:21.342 [http-nio-80-exec-3] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Fri Aug 26 10:14:21 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=3, executionMessage=null)
+10:14:25.127 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/product/routeDetail, visitTime=Fri Aug 26 10:14:25 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=4, executionMessage=null)
+10:14:25.233 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Fri Aug 26 10:14:25 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=2, executionMessage=null)
+10:14:31.560 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/product/routeDetail, visitTime=Fri Aug 26 10:14:31 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=2, executionMessage=null)
+10:14:31.632 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Fri Aug 26 10:14:31 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=3, executionMessage=null)
+10:15:12.443 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/permission/all, visitTime=Fri Aug 26 10:15:12 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=6, executionMessage=null)
+10:15:13.268 [http-nio-80-exec-10] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/role/all, visitTime=Fri Aug 26 10:15:13 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=5, executionMessage=null)
+10:15:13.787 [http-nio-80-exec-4] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/admin/all, visitTime=Fri Aug 26 10:15:13 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=5, executionMessage=null)
+10:15:19.494 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/admin/desc, visitTime=Fri Aug 26 10:15:19 CST 2022, username=baizhan, ip=127.0.0.1, executionTime=5, executionMessage=null)
+10:17:25.063 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:17:25.069 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

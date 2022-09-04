@@ -2,20 +2,27 @@ package com.hniu.travel.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.hniu.travel.bean.PackageTour;
 import com.hniu.travel.mapper.ProductMapper;
 import com.hniu.travel.pojo.Product;
+import com.hniu.travel.util.StringTools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
+import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Transactional
 @Service
 public class ProductService {
-    @Autowired
+    @Resource
     private ProductMapper productMapper;
+    @Resource
+    private StringTools stringTools;
 
     public Page<Product> findPage(Integer page, Integer size){
         return productMapper.findProductPage(new Page(page,size));
@@ -80,5 +87,16 @@ public class ProductService {
     public Page<Product> findMemberFavorite(int page, int size, Integer mid){
         Page<Product> favoriteProduct = productMapper.findMemberFavorite(new Page(page, size), mid);
         return favoriteProduct;
+    }
+    public PackageTour findTour(){
+        List<Product> left = productMapper.findTour(0);
+        for (Product product : left) {
+            product.setProductName(stringTools.removeExcessText(product.getProductName()));
+        }
+        List<Product> right = productMapper.findTour(5);
+        for (Product product : right) {
+            product.setProductName(stringTools.removeExcessText(product.getProductName()));
+        }
+        return new PackageTour(left,right);
     }
 }

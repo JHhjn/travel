@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hniu.travel.pojo.Product;
 
+import java.util.List;
+
 public interface ProductMapper extends BaseMapper<Product> {
 
     Page<Product> findProductPage(Page<Product> page);
@@ -16,4 +18,7 @@ public interface ProductMapper extends BaseMapper<Product> {
     void del(int  mid, int pid);
 
     Page<Product> findMemberFavorite(Page<Product> page,Integer mid);
+
+    //跟团游
+    List<Product> findTour(Integer random);
 }

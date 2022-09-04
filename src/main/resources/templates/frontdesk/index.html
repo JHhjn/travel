@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8">
@@ -44,6 +44,15 @@
                 <div class="item">
                     <img src="images/3.jpg" alt="">
                 </div>
+                <div class="item">
+                    <img src="images/banner_1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="images/banner_2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="images/banner_3.jpg" alt="">
+                </div>
             </div>
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -67,130 +76,43 @@
             <div class="tops_container">
                 <ul class="tops_list">
                     <li class="header">跟团游</li>
-                    <li class="item">
-                        <span class="badge">1</span>
-                        <img src="./images/top1.jpg" width="100px" height="100px" />
-                        <p class="content">
-                            <span>喀纳斯8日游</span><br />
-                            <span>5.0分</span>
-                            |
-                            <span>100人出游</span>
+                        <li class="item" th:each="listLeft,listStatus : ${packageLeft}">
 
-                        </p>
-                        <p class="price">￥6980</p>
-                    </li>
-                    <li class="item">
-                        <span class="badge" style="background:#FF8B26">2</span>
-                        <img src="./images/top2.jpg" width="100px" height="100px" />
-                        <p class="content">
-                            <span>黄果树梵净山11日游</span><br />
-                            <span>5.0分</span>
-                            |
-                            <span>70人出游</span>
+                            <span class="badge" th:text="${listStatus.count}"></span>
+                            <a th:href="@{/frontdesk/product/routeDetail(pid=${listLeft.pid})}">
+                            <img th:src="${listLeft.pImage}" width="100px" height="100px" />
+                            </a>
+                            <p class="content">
+                                <a th:href="@{/frontdesk/product/routeDetail(pid=${listLeft.pid})}" style="color: #0c0c0c">
+                                <span th:text="${listLeft.productName}"></span><br />
+                                <span>5.0分</span>|
+                                <span>出游人数不限</span>
+                                </a>
+                            </p>
+                            <p class="price" th:text="'￥'+${listLeft.price}">￥6980</p>
 
-                        </p>
-                        <p class="price">￥3280</p>
-                    </li>
-                    <li class="item">
-                        <span class="badge" style="background:#FFB63E">3</span>
-                        <img src="./images/top3.jpeg" width="100px" height="100px" />
-                        <p class="content">
-                            <span>庐山3日游</span><br />
-                            <span>5.0分</span>
-                            |
-                            <span>60人出游</span>
+                        </li>
 
-                        </p>
-                        <p class="price">￥1817</p>
-                    </li>
-                    <li class="item">
-                        <span class="badge" style="background:#99AECA ;">4</span>
-                        <img src="./images/top4.jpg" width="100px" height="100px" />
-                        <p class="content">
-                            <span>张家界+黄龙洞+天门山+凤凰4日游</span><br />
-                            <span>5.0分</span>
-                            |
-                            <span>50人出游</span>
-
-                        </p>
-                        <p class="price">￥2780</p>
-                    </li>
-                    <li class="item">
-                        <span class="badge" style="background:#99AECA ;">5</span>
-                        <img src="./images/top5.jpg" width="100px" height="100px" />
-                        <p class="content">
-                            <span>拉萨布宫-巴松错-羊湖卧飞9日游</span><br />
-                            <span>5.0分</span>
-                            |
-                            <span>40人出游</span>
-
-                        </p>
-                        <p class="price">￥7780</p>
-                    </li>
 
                 </ul>
+
                 <ul class="tops_list">
                     <li class="header">跟团游</li>
-                    <li class="item">
-                        <span class="badge">1</span>
-                        <img src="./images/top1.jpg" width="100px" height="100px" />
+                    <li class="item" th:each="rightList,Status : ${packageRight}">
+                        <span class="badge" th:text="${Status.count+5}">1</span>
+                        <a th:href="@{/frontdesk/product/routeDetail(pid=${rightList.pid})}">
+                        <img th:src="${rightList.pImage}" width="100px" height="100px" />
+                        </a>
                         <p class="content">
-                            <span>喀纳斯8日游</span><br />
+                            <a th:href="@{/frontdesk/product/routeDetail(pid=${rightList.pid})}" style="color: #0c0c0c">
+                            <span th:text="${rightList.productName}"></span><br />
                             <span>5.0分</span>
-                            |
-                            <span>100人出游</span>
-
+                            <span>出游人数不限</span>
+                            </a>
                         </p>
-                        <p class="price">￥6980</p>
+                        <p class="price" th:text="'￥'+${rightList.price}">￥6980</p>
                     </li>
-                    <li class="item">
-                        <span class="badge" style="background:#FF8B26">2</span>
-                        <img src="./images/top2.jpg" width="100px" height="100px" />
-                        <p class="content">
-                            <span>黄果树梵净山11日游</span><br />
-                            <span>5.0分</span>
-                            |
-                            <span>70人出游</span>
 
-                        </p>
-                        <p class="price">￥3280</p>
-                    </li>
-                    <li class="item">
-                        <span class="badge" style="background:#FFB63E">3</span>
-                        <img src="./images/top3.jpeg" width="100px" height="100px" />
-                        <p class="content">
-                            <span>庐山3日游</span><br />
-                            <span>5.0分</span>
-                            |
-                            <span>60人出游</span>
-
-                        </p>
-                        <p class="price">￥1817</p>
-                    </li>
-                    <li class="item">
-                        <span class="badge" style="background:#99AECA ;">4</span>
-                        <img src="./images/top4.jpg" width="100px" height="100px" />
-                        <p class="content">
-                            <span>张家界+黄龙洞+天门山+凤凰4日游</span><br />
-                            <span>5.0分</span>
-                            |
-                            <span>50人出游</span>
-
-                        </p>
-                        <p class="price">￥2780</p>
-                    </li>
-                    <li class="item">
-                        <span class="badge" style="background:#99AECA ;">5</span>
-                        <img src="./images/top5.jpg" width="100px" height="100px" />
-                        <p class="content">
-                            <span>拉萨布宫-巴松错-羊湖卧飞9日游</span><br />
-                            <span>5.0分</span>
-                            |
-                            <span>40人出游</span>
-
-                        </p>
-                        <p class="price">￥7780</p>
-                    </li>
 
                 </ul>
             </div>

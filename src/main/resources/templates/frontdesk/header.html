@@ -191,15 +191,14 @@
                 <div>
                     <div style="width:100px">
 						<span class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
-							 <input id="cityName" type="text" list="cityNamelist" placeholder="北京" value="北京" style="padding:0.5em;border-radius:10px; border: none;">
+							 <input id="cityName" type="text" list="cityNamelist" placeholder="长沙市" value="长沙市" style="padding:0.5em;border-radius:10px; border: none;">
         <datalist id="cityNamelist">
 
         </datalist>
 						</span>
                     </div>
-                    <p class="city">
+                    <p class="city" th:text="'当前位置：'+${session.lives.province}+' '+${session.lives.city}+ '天气：'+${session.lives.weather}+ '温度：'+${session.lives.temperature}">
                         <span class="glyphicon glyphicon-map-marker"></span>
-                            当前位置
                     </p>
                 </div>
             </div>
