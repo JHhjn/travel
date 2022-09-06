@@ -1,23 +1,15 @@
 package com.hniu.travel;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hniu.travel.bean.*;
-import com.hniu.travel.mapper.AdminMapper;
-import com.hniu.travel.mapper.PermissionMapper;
-import com.hniu.travel.mapper.ProductMapper;
-import com.hniu.travel.mapper.RoleMapper;
-import com.hniu.travel.pojo.Admin;
-import com.hniu.travel.pojo.Permission;
+import com.hniu.travel.mapper.*;
 import com.hniu.travel.pojo.Product;
-import com.hniu.travel.pojo.Role;
 import com.hniu.travel.service.*;
 import com.hniu.travel.util.StringTools;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootTest
@@ -42,19 +34,24 @@ class TravelApplicationTests {
     private StringTools stringTools;
     @Autowired
     private WeatherService weatherService;
+    @Autowired
+    private HotMapper hotMapper;
+    @Autowired
+    private ThemeMapper themeMapper;
+    @Autowired
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    @Autowired
+    private HotService hotService;
+    @Autowired
+    private ThemeService themeService;
 
 
 
 
     @Test
-    public void t6(){
-        PackageTour tour = productService.findTour();
-        System.out.println(tour);
+    public void t5(){
+        String hjn = bCryptPasswordEncoder.encode("hjn");
+        System.out.println(hjn);
     }
-    @Test
-    public void t7(){
-        Weather weatherInfo = weatherService.getWeatherInfo("长沙市");
-        List<WheatherDetails> lives = weatherInfo.getLives();
-        System.out.println(lives.get(0));
-    }
+
 }

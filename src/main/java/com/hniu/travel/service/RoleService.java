@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hniu.travel.bean.PermissionWithStatus;
 import com.hniu.travel.mapper.PermissionMapper;
 import com.hniu.travel.mapper.RoleMapper;
-import com.hniu.travel.pojo.Admin;
 import com.hniu.travel.pojo.Permission;
 import com.hniu.travel.pojo.Role;
 import org.springframework.beans.BeanUtils;

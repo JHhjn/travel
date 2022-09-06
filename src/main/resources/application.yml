@@ -1,5 +1,8 @@
 # 端口
 server:
+  servlet:
+    session:
+      timeout: 180m
   port: 80
 
 

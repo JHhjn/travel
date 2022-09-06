@@ -122,62 +122,22 @@
                     <div class="row">
                         <div class="col-md-3">
                             <h4>热门景点</h4>
-                            <ul>
-                                <li>蜈支洲岛</li>
-                                <li>西双版纳</li>
-                                <li>鼓浪屿</li>
-                                <li>雪乡</li>
-                                <li>北海</li>
-                                <li>故宫</li>
-                                <li>雪乡</li>
-                                <li>兵马俑</li>
-                                <li>张家界</li>
-                                <li>黄山</li>
-
+                            <ul >
+                                <li th:each="hotTitle : ${hotProduct.hotTitleList}">
+                                    <a th:href="@{/frontdesk/product/routeList(productName=${hotTitle.popularName})}" th:text="${hotTitle.popularName}" style="color: black"></a>
+                                </li>
                             </ul>
                         </div>
+
                         <div class="col-md-9">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4" th:each="hotProduct : ${hotProduct.hotProductList}">
                                     <div class="box">
-                                        <img src="./images/dom1.jpeg" >
-                                        <span class="title">三亚+蜈支洲+天堂+南山+天涯双飞5日游</span>
-                                        <span class="price">￥3000</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/dom2.jpg" alt="">
-                                        <span class="title">海南三亚一地+亚特兰蒂斯双飞5日自由行</span>
-                                        <span class="price">￥6000</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/dom3.jpg" alt="">
-                                        <span class="title">云南+丽江+大理双飞5日游</span>
-                                        <span class="price">￥4000</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/dom4.jpg" alt="">
-                                        <span class="title">昆明+红土地+弥勒+普者黑+元阳梯田+抚仙湖双飞7日游</span>
-                                        <span class="price">￥5500</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/dom5.jpg" alt="">
-                                        <span class="title">成都+九寨沟黄龙+都江堰+熊猫6日游</span>
-                                        <span class="price">￥2800</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/dom6.jpg" alt="">
-                                        <span class="title">贵州黄果树+荔波+西江苗寨双飞5日游</span>
-                                        <span class="price">￥5500</span>
+                                        <a th:href="@{/frontdesk/product/routeDetail(pid=${hotProduct.pid})}">
+                                        <img th:src="${hotProduct.pImage}" >
+                                        <span class="title" th:text="${hotProduct.productName}"></span>
+                                        <span class="price" th:text="'￥'+${hotProduct.price}"></span>
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -185,64 +145,27 @@
                         </div>
                     </div>
                 </div>
+
                 <div>
                     <h3>周边旅游</h3>
                     <div class="row">
                         <div class="col-md-3">
                             <h4>热门目的地</h4>
                             <ul>
-                                <li>上海迪士尼</li>
-                                <li>普陀山</li>
-                                <li>宁波</li>
-                                <li>千岛湖</li>
-                                <li>黄山</li>
-                                <li>大明山</li>
-                               
-
+                                <li th:each="hotTitle : ${travelAround.hotTitleList}">
+                                    <a th:href="@{/frontdesk/product/routeList(productName=${hotTitle.popularName})}" th:text="${hotTitle.popularName}" style="color: black"></a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-md-9">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4" th:each="around : ${travelAround.travelAroundList}">
                                     <div class="box">
-                                        <img src="./images/zhou1.jpg" >
-                                        <span class="title">古北水镇2日游</span>
-                                        <span class="price">￥698</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/zhou2.jpg" alt="">
-                                        <span class="title">北京八达岭长城1日游</span>
-                                        <span class="price">￥120</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/zhou3.jpg" alt="">
-                                        <span class="title">密云古北水镇1日游</span>
-                                        <span class="price">￥278</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/zhou4.jpeg" alt="">
-                                        <span class="title">秦皇岛-北戴河-山海关-黄金海岸3日游</span>
-                                        <span class="price">￥3300</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/zhou5.jpg" alt="">
-                                        <span class="title">秦皇岛-南北戴河-山海关3日游</span>
-                                        <span class="price">￥1280</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/zhou6.jpeg" alt="">
-                                        <span class="title">北京黄花城水长城一日游</span>
-                                        <span class="price">￥100</span>
+                                        <a th:href="@{/frontdesk/product/routeDetail(pid=${around.pid})}">
+                                        <img th:src="${around.pImage}" >
+                                        <span class="title" th:text="${around.productName}"></span>
+                                        <span class="price" th:text="'￥'+${around.price}"></span>
+                                        </a>
                                     </div>
                                 </div>
                                
@@ -255,64 +178,23 @@
                     <div class="row">
                         <div class="col-md-3">
                             <h4>热门主题</h4>
-                            <ul>
-                                <li>蜜月</li>
-                                <li>度假</li>
-                                <li>游乐园</li>
-                                <li>婚纱</li>
-                                <li>摄影</li>
-                                <li>名山胜水</li>
-                                <li>儿童</li>
-                                <li>老年</li>
-                               
-
+                            <ul >
+                                <li th:each="themeTitle : ${themeProduct.themeTitleList}">
+                                    <a th:href="@{/frontdesk/product/routeList(productName=${themeTitle.themeName})}" style="color: #0c0c0c" th:text="${themeTitle.themeName}"></a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-md-9">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4" th:each="themeProduct : ${themeProduct.themeProductList}">
                                     <div class="box">
-                                        <img src="./images/theme1.jpg" >
-                                        <span class="title">广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游</span>
-                                        <span class="price">￥7000</span>
+                                        <a th:href="@{/frontdesk/product/routeDetail(pid=${themeProduct.pid})}">
+                                        <img th:src="${themeProduct.pImage}" >
+                                        <span class="title" th:text="${themeProduct.productName}"></span>
+                                        <span class="price" th:text="'￥'+${themeProduct.price}"></span>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/theme2.jpg" alt="">
-                                        <span class="title">三亚亚龙湾瑞吉度假酒店2-5日酒景套餐</span>
-                                        <span class="price">￥1580</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/theme3.jpg" alt="">
-                                        <span class="title">海南三亚+西岛+千古情+南山双飞5日游</span>
-                                        <span class="price">￥3650</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/theme4.jpeg" alt="">
-                                        <span class="title">三亚婚纱旅拍4晚5日游</span>
-                                        <span class="price">￥4800</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/theme5.jpg" alt="">
-                                        <span class="title">马尔代夫阿雅达白色礼堂婚礼</span>
-                                        <span class="price">￥1280</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box">
-                                        <img src="./images/theme6.jpg" alt="">
-                                        <span class="title">海南三亚双飞5日游</span>
-                                        <span class="price">￥3600</span>
-                                    </div>
-                                </div>
-                               
                             </div>
                         </div>
                     </div>

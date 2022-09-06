@@ -13,7 +13,6 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 @MapperScan("com.hniu.travel.mapper")
 @ServletComponentScan
-
 public class TravelApplication {
 
     public static void main(String[] args) {

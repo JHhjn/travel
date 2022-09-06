@@ -197,7 +197,7 @@
         </datalist>
 						</span>
                     </div>
-                    <p class="city" th:text="'当前位置：'+${session.lives.province}+' '+${session.lives.city}+ '天气：'+${session.lives.weather}+ '温度：'+${session.lives.temperature}">
+                    <p class="city" th:text="'当前位置：'+${session.lives.province}+'省 '+${session.lives.city}+ '天气：'+${session.lives.weather}+ '温度：'+${session.lives.temperature}">
                         <span class="glyphicon glyphicon-map-marker"></span>
                     </p>
                 </div>
@@ -213,8 +213,8 @@
                     <img src="/frontdesk/images/hot_tel.jpg" alt="">
                 </div>
                 <div class="hot_tel">
-                    <p class="hot_time">客服热线(9:00-6:00)</p>
-                    <p class="hot_num">18514000360</p>
+                    <p class="hot_time">客服热线(9:00-16:00)</p>
+                    <p class="hot_num">13142219313</p>
                 </div>
             </div>
         </div>
@@ -226,7 +226,6 @@
     <script>
 
         $(function (){
-
 
             $.get("/frontdesk/category/all",function (categories) {
                 var str = "<li class=\"nav-active\"><a href=\"/frontdesk/index\">首页</a></li>";
@@ -277,6 +276,8 @@
                     $(".city").html(text);
 
                 })
+
+
             });
         })
     </script>

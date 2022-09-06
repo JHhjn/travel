@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hniu.travel.mapper.ThemeMapper">
+
+    <select id="findThemeByThid" resultType="com.hniu.travel.pojo.Product">
+        SELECT
+            *
+        FROM
+            theme_product,
+            product
+        WHERE
+            theme_product.pid = product.pid AND
+            theme_product.thid = #{thid}
+    </select>
+</mapper>

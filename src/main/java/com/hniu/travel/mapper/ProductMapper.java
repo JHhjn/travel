@@ -21,4 +21,6 @@ public interface ProductMapper extends BaseMapper<Product> {
 
     //跟团游
     List<Product> findTour(Integer random);
+
+
 }

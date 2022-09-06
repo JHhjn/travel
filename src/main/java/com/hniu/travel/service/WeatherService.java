@@ -21,10 +21,14 @@ public class WeatherService {
     private String key;
     @Value(value = "${gaode.url}")
     private  String url;
-    @Resource
+    @Autowired
     private AreasMapper areasMapper;
 
-
+    /**
+     * 获取天气信息
+     * @param cityName
+     * @return
+     */
     public Weather getWeatherInfo(String cityName){
         //通过城市名字查询城市id
         QueryWrapper<Areas> queryWrapper = new QueryWrapper<>();
@@ -38,6 +42,11 @@ public class WeatherService {
         return weather;
     }
 
+    /**
+     * 模糊查询城市列表
+     * @param cityName
+     * @return
+     */
     public List<Areas> getAreasesLikeCityName(String cityName){
         QueryWrapper<Areas> queryWrapper = new QueryWrapper<>();
         queryWrapper.like("cName", cityName);

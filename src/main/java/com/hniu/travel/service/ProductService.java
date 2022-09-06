@@ -19,9 +19,9 @@ import java.util.Random;
 @Transactional
 @Service
 public class ProductService {
-    @Resource
+    @Autowired
     private ProductMapper productMapper;
-    @Resource
+    @Autowired
     private StringTools stringTools;
 
     public Page<Product> findPage(Integer page, Integer size){
