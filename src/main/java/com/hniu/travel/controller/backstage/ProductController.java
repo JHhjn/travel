@@ -34,12 +34,16 @@ public class ProductController {
 
     @GetMapping("/all")
 //    @PreAuthorize("hasAnyAuthority('/product/all')")
-    public ModelAndView all(@RequestParam(defaultValue = "1") Integer page,
+    public ModelAndView all(@RequestParam(defaultValue = "default") String sreachInfo,@RequestParam(defaultValue = "1") Integer page,
                             @RequestParam(defaultValue = "5") Integer size){
-
-        Page<Product> productPage = service.findPage(page, size);
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("productPage",productPage);
+        Page<Product> productPage=null;
+        if (sreachInfo .equals("default")) {
+             productPage = service.findPage(page, size);
+        }else {
+             productPage = service.findProductByLikeName(sreachInfo, page, size);
+        }
+        modelAndView.addObject("productPage", productPage);
         modelAndView.setViewName("/backstage/product_all");
         return modelAndView;
     }
@@ -114,5 +118,7 @@ public class ProductController {
         service.updateStatus(pid);
         return "redirect:"+referer;
     }
+
+
 
 }

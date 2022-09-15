@@ -12,7 +12,29 @@
 <aside th:replace="~{/backstage/common_aside::aside}"></aside>
 <div class="wrapper">
     <!-- 内容区域 -->
-    <div class="content-wrapper"></div>
+    <div class="content-wrapper">
+        <div align="center"><h2>欢迎进入旅游网站后台</h2> </div>
+        <div style="color: red"><h2>注意：</h2> </div>
+        <div>
+            <span style="color: red">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            超级管理员：</span>
+            <span>拥有所有的权限，管理整个前后台,包括管理员在内的数据</span>
+        </div>
+        <div>
+            <span style="color: red">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            前台管理员：</span>
+            <span>拥有前台所有的权限，管理整个前台的数据</span>
+        </div>
+
+        <div>
+            <span style="color: red">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            首页管理员：</span>
+            <span>拥有前台首页的权限，管理首页的数据</span>
+        </div>
+    </div>
 </div>
 <!-- 底部导航 -->
 <footer th:replace="~{/backstage/common_footer::footer}"></footer>

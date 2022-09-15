@@ -1,5 +1,6 @@
 package com.hniu.travel;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hniu.travel.bean.*;
 import com.hniu.travel.mapper.*;
 import com.hniu.travel.pojo.Product;
@@ -49,9 +50,9 @@ class TravelApplicationTests {
 
 
     @Test
-    public void t5(){
-        String hjn = bCryptPasswordEncoder.encode("hjn");
-        System.out.println(hjn);
+    public void t5() {
+        Page<Product> page = productMapper.sreachPage(new Page<Product>(1, 5), "北京");
+        System.out.println(page);
     }
 
-}
+    }

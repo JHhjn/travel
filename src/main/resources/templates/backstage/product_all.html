@@ -49,6 +49,14 @@
                 </div>
               </div>
             </div>
+            <div class="box-tools pull-right">
+
+              <div class="has-feedback">
+                <input id="sreach" type="text" class="form-control input-sm" placeholder="搜索">
+<!--                  <span id="sreachBtn" class="glyphicon glyphicon-search form-control-feedback"></span>-->
+              </div>
+
+            </div>
             <!--数据列表-->
             <table id="dataList"
                    class="table table-bordered table-striped table-hover dataTable">
@@ -110,6 +118,13 @@
 
 <!-- 在js中获取Model的值 -->
 <script th:inline="javascript">
+  $('#sreach').bind('keypress',function(event){
+    if(event.keyCode == "13"){
+      var sreachInfo = $("#sreach").val();
+      location.href="/backstage/product/all?sreachInfo="+sreachInfo;
+    }
+  });
+
   function del(pid) {
     if(confirm("确定要删除吗？")){
       location.href="/backstage/product/delete?pid="+pid;

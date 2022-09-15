@@ -1,0 +1,37 @@
+09:44:55.896 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 10044 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+09:44:55.898 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+09:44:57.065 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+09:44:57.073 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+09:44:57.074 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+09:44:57.074 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+09:44:57.209 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:44:57.209 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1273 ms
+09:44:57.928 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+09:44:57.963 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+09:44:58.858 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75aea2ba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a47597, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ac8768e, org.springframework.security.web.header.HeaderWriterFilter@526e8108, org.springframework.web.filter.CorsFilter@12f279b5, org.springframework.security.web.authentication.logout.LogoutFilter@208205ed, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@671d03bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ea04cab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52559a69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ff6dd3c, org.springframework.security.web.session.SessionManagementFilter@4a9860, org.springframework.security.web.access.ExceptionTranslationFilter@5f366587, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a7df831]
+09:44:58.916 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+09:44:58.935 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+09:44:58.945 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.447 seconds (JVM running for 4.503)
+09:45:12.654 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:45:12.654 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:45:12.655 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+09:45:12.688 [http-nio-80-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:45:13.171 [http-nio-80-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:45:14.770 [http-nio-80-exec-4] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Wed Oct 05 09:45:14 CST 2022, username=null, ip=127.0.0.1, executionTime=15, executionMessage=null)
+09:45:44.862 [http-nio-80-exec-8] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Wed Oct 05 09:45:44 CST 2022, username=hjn, ip=127.0.0.1, executionTime=33, executionMessage=null)
+09:45:46.935 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Wed Oct 05 09:45:46 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+09:45:47.639 [http-nio-80-exec-4] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Wed Oct 05 09:45:47 CST 2022, username=hjn, ip=127.0.0.1, executionTime=11, executionMessage=null)
+09:45:48.621 [http-nio-80-exec-4] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Wed Oct 05 09:45:48 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+09:45:49.191 [http-nio-80-exec-3] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Wed Oct 05 09:45:49 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+09:46:00.514 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Wed Oct 05 09:46:00 CST 2022, username=hjn, ip=127.0.0.1, executionTime=6, executionMessage=null)
+09:46:01.613 [http-nio-80-exec-4] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Wed Oct 05 09:46:01 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+09:46:03.499 [http-nio-80-exec-8] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/admin/all, visitTime=Wed Oct 05 09:46:03 CST 2022, username=hjn, ip=127.0.0.1, executionTime=6, executionMessage=null)
+09:46:04.133 [http-nio-80-exec-3] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/role/all, visitTime=Wed Oct 05 09:46:04 CST 2022, username=hjn, ip=127.0.0.1, executionTime=17, executionMessage=null)
+09:46:04.774 [http-nio-80-exec-8] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/permission/all, visitTime=Wed Oct 05 09:46:04 CST 2022, username=hjn, ip=127.0.0.1, executionTime=7, executionMessage=null)
+09:46:05.482 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/admin/all, visitTime=Wed Oct 05 09:46:05 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+09:46:06.079 [http-nio-80-exec-5] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/role/all, visitTime=Wed Oct 05 09:46:06 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+09:46:06.585 [http-nio-80-exec-3] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/permission/all, visitTime=Wed Oct 05 09:46:06 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+09:46:08.669 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Wed Oct 05 09:46:08 CST 2022, username=hjn, ip=127.0.0.1, executionTime=6, executionMessage=null)
+09:46:13.469 [http-nio-80-exec-5] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Wed Oct 05 09:46:13 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+09:47:03.160 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09:47:03.166 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

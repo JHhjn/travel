@@ -3,10 +3,12 @@ package com.hniu.travel.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hniu.travel.pojo.Product;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
 public interface ProductMapper extends BaseMapper<Product> {
+
 
     Page<Product> findProductPage(Page<Product> page);
 
@@ -21,6 +23,8 @@ public interface ProductMapper extends BaseMapper<Product> {
 
     //跟团游
     List<Product> findTour(Integer random);
+
+    Page<Product> sreachPage(Page<Product> page,String productName);
 
 
 }

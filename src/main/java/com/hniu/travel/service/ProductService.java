@@ -54,6 +54,14 @@ public class ProductService {
      return  productMapper.findOne(pid);
     }
 
+    /**
+     * 分页查询产品
+     * @param cid
+     * @param productName
+     * @param page
+     * @param size
+     * @return
+     */
     public Page<Product> findProduct(Integer cid,String productName,Integer page,Integer size){
         QueryWrapper<Product> queryWrapper=new QueryWrapper<>();
         if (cid != null){
@@ -88,6 +96,11 @@ public class ProductService {
         Page<Product> favoriteProduct = productMapper.findMemberFavorite(new Page(page, size), mid);
         return favoriteProduct;
     }
+
+    /**
+     * 跟团游
+     * @return
+     */
     public PackageTour findTour(){
         List<Product> left = productMapper.findTour(0);
         for (Product product : left) {
@@ -98,5 +111,15 @@ public class ProductService {
             product.setProductName(stringTools.removeExcessText(product.getProductName()));
         }
         return new PackageTour(left,right);
+    }
+
+    /**
+     * 通过名字模糊查找product
+     * @param productName
+     * @return
+     */
+    public Page<Product> findProductByLikeName(String productName,int page,int size){
+        Page selectPage = productMapper.sreachPage(new Page(page, size), productName);
+        return selectPage;
     }
 }

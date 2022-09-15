@@ -17,12 +17,15 @@
             <result property="cname" column="cname"></result>
         </association>
     </resultMap>
+
     <insert id="add">
         insert into favorite values(#{mid},#{pid})
     </insert>
+
     <delete id="del">
         delete from favorite where  mid=#{mid} and pid=#{pid}
     </delete>
+
     <select id="findProductPage" resultMap="productMapper">
         SELECT *
         FROM product
@@ -56,5 +59,10 @@
         ORDER BY
             product.price DESC
             LIMIT #{random},5
+    </select>
+    <select id="sreachPage" resultMap="productMapper">
+        select *
+        from product
+        where productName like CONCAT("%",#{productName},"%")
     </select>
 </mapper>

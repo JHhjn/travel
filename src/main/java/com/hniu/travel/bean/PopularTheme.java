@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+/**
+ * 热门主题
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

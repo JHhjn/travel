@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+/**
+ * 热门景点
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -1,0 +1,319 @@
+17:29:44.701 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 25024 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+17:29:44.703 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+17:29:46.589 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:29:46.595 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:29:46.596 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:29:46.596 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:29:46.724 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:29:46.724 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1980 ms
+17:29:47.305 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:29:47.331 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:29:48.229 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61ffd148, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58324c9f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a2dc0a, org.springframework.security.web.header.HeaderWriterFilter@70029d2d, org.springframework.web.filter.CorsFilter@5d7d8613, org.springframework.security.web.authentication.logout.LogoutFilter@52559a69, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e700eba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@526e8108, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e957e2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6eb089e6, org.springframework.security.web.session.SessionManagementFilter@709f0202, org.springframework.security.web.access.ExceptionTranslationFilter@721d8ab5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@270a620]
+17:29:48.273 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:29:48.288 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:29:48.298 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.965 seconds (JVM running for 4.965)
+17:30:54.370 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:30:54.370 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:30:54.372 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:30:54.405 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:30:54.823 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:31:07.727 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Sun Oct 09 17:31:07 CST 2022, username=null, ip=127.0.0.1, executionTime=30, executionMessage=null)
+17:31:15.206 [http-nio-80-exec-10] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/product/routeDetail, visitTime=Sun Oct 09 17:31:15 CST 2022, username=null, ip=127.0.0.1, executionTime=4, executionMessage=null)
+17:31:15.334 [http-nio-80-exec-5] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Sun Oct 09 17:31:15 CST 2022, username=null, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:31:17.936 [http-nio-80-exec-4] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Sun Oct 09 17:31:17 CST 2022, username=null, ip=127.0.0.1, executionTime=10, executionMessage=null)
+17:31:22.628 [http-nio-80-exec-3] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/product/routeList, visitTime=Sun Oct 09 17:31:22 CST 2022, username=null, ip=127.0.0.1, executionTime=46, executionMessage=null)
+17:31:22.760 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Sun Oct 09 17:31:22 CST 2022, username=null, ip=127.0.0.1, executionTime=3, executionMessage=null)
+17:31:24.609 [http-nio-80-exec-8] INFO  com.hniu.travel.aop.LogAop - Log(url=/frontdesk/category/all, visitTime=Sun Oct 09 17:31:24 CST 2022, username=null, ip=127.0.0.1, executionTime=2, executionMessage=null)
+17:31:38.975 [http-nio-80-exec-4] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/role/all, visitTime=Sun Oct 09 17:31:38 CST 2022, username=hjn, ip=127.0.0.1, executionTime=8, executionMessage=null)
+17:31:39.700 [http-nio-80-exec-4] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/admin/all, visitTime=Sun Oct 09 17:31:39 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:31:40.163 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/permission/all, visitTime=Sun Oct 09 17:31:40 CST 2022, username=hjn, ip=127.0.0.1, executionTime=7, executionMessage=null)
+17:31:41.432 [http-nio-80-exec-8] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:31:41 CST 2022, username=hjn, ip=127.0.0.1, executionTime=6, executionMessage=null)
+17:31:42.682 [http-nio-80-exec-8] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:31:42 CST 2022, username=hjn, ip=127.0.0.1, executionTime=9, executionMessage=null)
+17:31:43.562 [http-nio-80-exec-1] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:31:43 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+17:31:44.113 [http-nio-80-exec-8] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:31:44 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:31:44.624 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:31:44 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+17:31:45.038 [http-nio-80-exec-10] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:31:45 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:31:46.152 [http-nio-80-exec-1] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:31:46 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:31:46.892 [http-nio-80-exec-1] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:31:46 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:31:47.570 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:31:47 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+17:31:48.939 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:31:48 CST 2022, username=hjn, ip=127.0.0.1, executionTime=6, executionMessage=null)
+17:31:49.592 [http-nio-80-exec-5] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:31:49 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:31:50.167 [http-nio-80-exec-8] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:31:50 CST 2022, username=hjn, ip=127.0.0.1, executionTime=10, executionMessage=null)
+17:31:50.813 [http-nio-80-exec-1] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:31:50 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+17:31:51.848 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:31:51 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:39:34.361 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:39:34 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+17:39:35.794 [http-nio-80-exec-3] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:39:35 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:39:36.845 [http-nio-80-exec-8] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:39:36 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:39:42.930 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:39:42 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:39:44.410 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:39:44 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:39:44.998 [http-nio-80-exec-10] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:39:44 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:39:46.201 [http-nio-80-exec-3] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:39:46 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:39:49.011 [http-nio-80-exec-1] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:39:49 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+17:39:50.623 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:39:50 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:39:55.493 [http-nio-80-exec-10] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:39:55 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:39:58.558 [http-nio-80-exec-4] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:39:58 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:40:07.574 [http-nio-80-exec-7] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/addPage, visitTime=Sun Oct 09 17:40:07 CST 2022, username=hjn, ip=127.0.0.1, executionTime=2, executionMessage=null)
+17:40:35.925 [http-nio-80-exec-9] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:40:35 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+17:40:40.324 [http-nio-80-exec-3] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/admin/all, visitTime=Sun Oct 09 17:40:40 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:40:46.227 [http-nio-80-exec-6] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/role/all, visitTime=Sun Oct 09 17:40:46 CST 2022, username=hjn, ip=127.0.0.1, executionTime=4, executionMessage=null)
+17:40:48.082 [http-nio-80-exec-10] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:40:48 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:40:48.589 [http-nio-80-exec-9] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/product/all, visitTime=Sun Oct 09 17:40:48 CST 2022, username=hjn, ip=127.0.0.1, executionTime=5, executionMessage=null)
+17:43:54.481 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:43:54.487 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:44:00.321 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 18044 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+17:44:00.327 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+17:44:01.831 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:44:01.840 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:44:01.840 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:44:01.840 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:44:01.972 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:44:01.972 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1530 ms
+17:44:02.618 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:44:02.647 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:44:03.441 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bc69ce9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@abad89c, org.springframework.security.web.context.SecurityContextPersistenceFilter@16a5c7e4, org.springframework.security.web.header.HeaderWriterFilter@70029d2d, org.springframework.web.filter.CorsFilter@602f8f94, org.springframework.security.web.authentication.logout.LogoutFilter@6a32191e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@285583d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c02670f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ca16adc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42507640, org.springframework.security.web.session.SessionManagementFilter@709f0202, org.springframework.security.web.access.ExceptionTranslationFilter@721d8ab5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@738d37fc]
+17:44:03.489 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:44:03.505 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:44:03.514 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.734 seconds (JVM running for 4.943)
+17:44:03.712 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:44:03.712 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:44:03.713 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+17:44:10.043 [http-nio-80-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:44:10.469 [http-nio-80-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:44:12.496 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/category/all, visitTime=Sun Oct 09 17:44:12 CST 2022, username=hjn, ip=127.0.0.1, executionTime=36, executionMessage=null)
+17:44:14.666 [http-nio-80-exec-2] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/admin/all, visitTime=Sun Oct 09 17:44:14 CST 2022, username=hjn, ip=127.0.0.1, executionTime=8, executionMessage=null)
+17:44:15.051 [http-nio-80-exec-9] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/role/all, visitTime=Sun Oct 09 17:44:15 CST 2022, username=hjn, ip=127.0.0.1, executionTime=9, executionMessage=null)
+17:44:15.579 [http-nio-80-exec-9] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/permission/all, visitTime=Sun Oct 09 17:44:15 CST 2022, username=hjn, ip=127.0.0.1, executionTime=8, executionMessage=null)
+17:50:25.198 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:50:25.204 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:50:27.810 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 22840 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+17:50:27.812 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+17:50:29.012 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:50:29.020 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:50:29.021 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:50:29.021 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:50:29.132 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:50:29.132 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1283 ms
+17:50:29.727 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:50:29.756 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:50:30.618 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@576b7c74, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21de60a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@29a33620, org.springframework.security.web.header.HeaderWriterFilter@1903b5d, org.springframework.web.filter.CorsFilter@73894c5a, org.springframework.security.web.authentication.logout.LogoutFilter@77f4c040, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15fb4566, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fd7a37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b649efa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7698b7a4, org.springframework.security.web.session.SessionManagementFilter@5cff6b74, org.springframework.security.web.access.ExceptionTranslationFilter@7ca16adc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cae2e4d]
+17:50:30.663 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:50:30.678 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:50:30.686 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.223 seconds (JVM running for 4.013)
+17:50:30.743 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:50:30.743 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:50:30.744 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+17:50:35.243 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:50:35.655 [http-nio-80-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:51:16.170 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:51:16.179 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:51:18.720 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 15672 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+17:51:18.723 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+17:51:19.773 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:51:19.779 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:51:19.780 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:51:19.780 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:51:19.870 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:51:19.870 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1108 ms
+17:51:20.500 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:51:20.531 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:51:21.384 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bc69ce9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@abad89c, org.springframework.security.web.context.SecurityContextPersistenceFilter@c02670f, org.springframework.security.web.header.HeaderWriterFilter@4be0a27d, org.springframework.web.filter.CorsFilter@602f8f94, org.springframework.security.web.authentication.logout.LogoutFilter@6436e181, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@36068727, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3db432c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62b57479, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42507640, org.springframework.security.web.session.SessionManagementFilter@6003ad65, org.springframework.security.web.access.ExceptionTranslationFilter@14168e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f347d7]
+17:51:21.437 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:51:21.454 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:51:21.463 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.083 seconds (JVM running for 3.903)
+17:51:22.726 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:51:22.726 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:51:22.727 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:51:22.826 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:51:23.234 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:54:09.422 [http-nio-80-exec-5] INFO  com.hniu.travel.aop.LogAop - Log(url=/backstage/role/all, visitTime=Sun Oct 09 17:54:09 CST 2022, username=hjn, ip=127.0.0.1, executionTime=39, executionMessage=null)
+17:55:46.614 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:55:46.620 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:55:49.909 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 18292 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+17:55:49.912 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+17:55:51.182 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:55:51.188 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:55:51.189 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:55:51.189 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:55:51.287 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:55:51.287 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1311 ms
+17:55:51.884 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:55:51.912 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:55:52.696 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42507640, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4dfe8b37, org.springframework.security.web.context.SecurityContextPersistenceFilter@526e8108, org.springframework.security.web.header.HeaderWriterFilter@2ec99035, org.springframework.web.filter.CorsFilter@11dcd42c, org.springframework.security.web.authentication.logout.LogoutFilter@65ef48f2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22bf9122, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4041739c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@134f8ef6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d13baac, org.springframework.security.web.session.SessionManagementFilter@c02670f, org.springframework.security.web.access.ExceptionTranslationFilter@8aeab9e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69de5bed]
+17:55:52.747 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:55:52.762 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:55:52.770 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.25 seconds (JVM running for 4.059)
+17:55:53.006 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:55:53.006 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:55:53.007 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:55:58.286 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:55:58.709 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:56:57.889 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:56:57.896 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:57:00.531 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 16868 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+17:57:00.533 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+17:57:01.637 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:57:01.643 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:57:01.643 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:57:01.643 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:57:01.731 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:57:01.731 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1161 ms
+17:57:02.288 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:57:02.312 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:57:03.085 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@602f8f94, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42507640, org.springframework.security.web.context.SecurityContextPersistenceFilter@13bdf540, org.springframework.security.web.header.HeaderWriterFilter@6003ad65, org.springframework.web.filter.CorsFilter@4dfe8b37, org.springframework.security.web.authentication.logout.LogoutFilter@6b649efa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3d88e6b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1903b5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ea04cab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11dcd42c, org.springframework.security.web.session.SessionManagementFilter@60743cdb, org.springframework.security.web.access.ExceptionTranslationFilter@1e225820, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5c134052]
+17:57:03.130 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:57:03.144 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:57:03.152 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 2.939 seconds (JVM running for 3.779)
+17:57:07.883 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:57:07.883 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:57:07.884 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+17:57:07.987 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:57:08.399 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:58:11.191 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:58:11.198 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:58:14.020 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 6532 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+17:58:14.022 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+17:58:15.206 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:58:15.214 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:58:15.214 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:58:15.214 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:58:15.310 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:58:15.310 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1248 ms
+17:58:15.903 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:58:15.935 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:58:16.751 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bc69ce9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@abad89c, org.springframework.security.web.context.SecurityContextPersistenceFilter@c02670f, org.springframework.security.web.header.HeaderWriterFilter@4be0a27d, org.springframework.web.filter.CorsFilter@602f8f94, org.springframework.security.web.authentication.logout.LogoutFilter@6436e181, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@36068727, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3db432c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62b57479, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42507640, org.springframework.security.web.session.SessionManagementFilter@6003ad65, org.springframework.security.web.access.ExceptionTranslationFilter@14168e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f347d7]
+17:58:16.797 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:58:16.812 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:58:16.819 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.188 seconds (JVM running for 4.196)
+17:58:17.017 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:58:17.017 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:58:17.018 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:58:17.127 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:58:17.565 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:59:02.811 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:59:02.819 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:59:05.580 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 22560 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+17:59:05.583 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+17:59:06.733 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:59:06.741 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:59:06.741 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:59:06.742 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:59:06.836 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:59:06.837 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1204 ms
+17:59:07.410 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:59:07.436 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:59:08.239 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@331ff3ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e5e6fc4, org.springframework.security.web.context.SecurityContextPersistenceFilter@16a5c7e4, org.springframework.security.web.header.HeaderWriterFilter@70029d2d, org.springframework.web.filter.CorsFilter@2785db06, org.springframework.security.web.authentication.logout.LogoutFilter@6a32191e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@285583d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c02670f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ca16adc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79980d8d, org.springframework.security.web.session.SessionManagementFilter@709f0202, org.springframework.security.web.access.ExceptionTranslationFilter@721d8ab5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@738d37fc]
+17:59:08.286 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:59:08.299 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:59:08.308 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.147 seconds (JVM running for 4.039)
+17:59:08.339 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:59:08.339 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:59:08.340 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:59:08.439 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:59:08.891 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:59:52.667 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:59:52.673 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:59:55.326 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 15852 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+17:59:55.328 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+17:59:56.370 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:59:56.376 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:59:56.377 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:59:56.377 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:59:56.463 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:59:56.463 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1096 ms
+17:59:57.037 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:59:57.067 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+17:59:57.882 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@545b5ed0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a7df831, org.springframework.security.web.context.SecurityContextPersistenceFilter@10244722, org.springframework.security.web.header.HeaderWriterFilter@4c19d42e, org.springframework.web.filter.CorsFilter@667dcaad, org.springframework.security.web.authentication.logout.LogoutFilter@4ac8768e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34414ffc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@709f0202, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a2dc0a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22d7fd41, org.springframework.security.web.session.SessionManagementFilter@65629ac6, org.springframework.security.web.access.ExceptionTranslationFilter@6ddee60f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7364eed1]
+17:59:57.932 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:59:57.947 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:59:57.955 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.061 seconds (JVM running for 3.912)
+18:00:01.059 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:00:01.059 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:00:01.060 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:00:01.158 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:00:01.568 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:00:17.627 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:00:17.633 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:00:20.149 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 22716 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+18:00:20.151 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+18:00:21.244 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+18:00:21.250 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+18:00:21.250 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:00:21.251 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+18:00:21.339 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:00:21.339 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1153 ms
+18:00:21.891 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+18:00:21.916 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+18:00:22.663 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@162c1dfb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21ae657b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cff6b74, org.springframework.security.web.header.HeaderWriterFilter@691500ab, org.springframework.web.filter.CorsFilter@799f916e, org.springframework.security.web.authentication.logout.LogoutFilter@706ceca6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@606a1bc4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@285583d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e700eba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@576b7c74, org.springframework.security.web.session.SessionManagementFilter@34414ffc, org.springframework.security.web.access.ExceptionTranslationFilter@526e8108, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45117dd]
+18:00:22.710 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+18:00:22.724 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+18:00:22.732 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 2.948 seconds (JVM running for 3.716)
+18:00:28.687 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:00:28.687 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:00:28.688 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:00:28.790 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:00:29.200 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:00:40.405 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:00:40.409 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:00:42.982 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 14124 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+18:00:42.984 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+18:00:44.159 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+18:00:44.165 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+18:00:44.166 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:00:44.166 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+18:00:44.256 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:00:44.256 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1228 ms
+18:00:44.806 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+18:00:44.829 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+18:00:45.602 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@115dcaea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cfd1075, org.springframework.security.web.context.SecurityContextPersistenceFilter@7412a438, org.springframework.security.web.header.HeaderWriterFilter@61615b4a, org.springframework.web.filter.CorsFilter@45117dd, org.springframework.security.web.authentication.logout.LogoutFilter@4041739c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29a33620, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a2dc0a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ec99035, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7741771e, org.springframework.security.web.session.SessionManagementFilter@33bb3f86, org.springframework.security.web.access.ExceptionTranslationFilter@ec7b5de, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@773014d3]
+18:00:45.650 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+18:00:45.665 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+18:00:45.673 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.047 seconds (JVM running for 3.827)
+18:00:52.337 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:00:52.337 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:00:52.338 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:00:52.436 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:00:52.833 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:04:13.069 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:04:13.077 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:04:15.901 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 22792 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+18:04:15.903 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+18:04:16.965 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+18:04:16.972 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+18:04:16.972 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:04:16.972 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+18:04:17.060 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:04:17.060 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1113 ms
+18:04:17.628 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+18:04:17.656 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+18:04:18.413 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bc69ce9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@abad89c, org.springframework.security.web.context.SecurityContextPersistenceFilter@16a5c7e4, org.springframework.security.web.header.HeaderWriterFilter@70029d2d, org.springframework.web.filter.CorsFilter@602f8f94, org.springframework.security.web.authentication.logout.LogoutFilter@6a32191e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@285583d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c02670f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ca16adc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42507640, org.springframework.security.web.session.SessionManagementFilter@709f0202, org.springframework.security.web.access.ExceptionTranslationFilter@721d8ab5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@738d37fc]
+18:04:18.457 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+18:04:18.470 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+18:04:18.478 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.016 seconds (JVM running for 3.882)
+18:04:22.250 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:04:22.250 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:04:22.251 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:04:22.354 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:04:22.758 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:04:50.785 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:04:50.792 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:04:53.475 [main] INFO  com.hniu.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_221 on LAPTOP-JN26IEH0 with PID 12296 (C:\Users\86131\Desktop\travel\target\classes started by 86131 in C:\Users\86131\Desktop\travel)
+18:04:53.478 [main] INFO  com.hniu.travel.TravelApplication - No active profile set, falling back to 1 default profile: "default"
+18:04:54.581 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+18:04:54.588 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+18:04:54.588 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:04:54.588 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+18:04:54.675 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:04:54.675 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1154 ms
+18:04:55.228 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Hot ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+18:04:55.252 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector - class com.hniu.travel.pojo.Theme ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+18:04:56.004 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bc69ce9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@abad89c, org.springframework.security.web.context.SecurityContextPersistenceFilter@c02670f, org.springframework.security.web.header.HeaderWriterFilter@4be0a27d, org.springframework.web.filter.CorsFilter@602f8f94, org.springframework.security.web.authentication.logout.LogoutFilter@6436e181, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@36068727, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3db432c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62b57479, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42507640, org.springframework.security.web.session.SessionManagementFilter@6003ad65, org.springframework.security.web.access.ExceptionTranslationFilter@14168e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f347d7]
+18:04:56.047 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+18:04:56.061 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+18:04:56.069 [main] INFO  com.hniu.travel.TravelApplication - Started TravelApplication in 3.007 seconds (JVM running for 3.863)
+18:04:59.731 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:04:59.731 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:04:59.732 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+18:04:59.831 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:05:00.237 [http-nio-80-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:05:10.181 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:05:10.186 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

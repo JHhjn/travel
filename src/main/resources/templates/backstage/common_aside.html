@@ -73,6 +73,32 @@
                 </ul>
             </li>
 
+<!--            <li class="treeview" >-->
+<!--                <a href="#">-->
+<!--                    <i class="fa fa-laptop"></i> <span>首页管理</span>-->
+<!--                    <span class="pull-right-container">-->
+<!--                        <i class="fa fa-angle-left pull-right"></i>-->
+<!--                    </span>-->
+<!--                </a>-->
+<!--                <ul class="treeview-menu">-->
+<!--                    <li >-->
+<!--                        <a href="/backstage/popularDestination/all">-->
+<!--                            <i class="fa fa-circle-o"></i>热门景点-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li >-->
+<!--                        <a href="/backstage/travelAround/all">-->
+<!--                            <i class="fa fa-circle-o"></i>热门周边-->
+<!--                        </a>-->
+<!--                    </li>-->
+
+<!--                    <li >-->
+<!--                        <a href="/backstage/popularTheme/all">-->
+<!--                            <i class="fa fa-circle-o"></i>热门主题-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </li>-->
         </ul>
     </section>
     <!-- /.sidebar -->
@@ -82,7 +108,7 @@
             $(".treeview").click(function () {
                 sessionStorage.menu = $(this).attr("id");
             })
-            // 点击内存菜单时记录他的id
+            // 点击内层菜单时记录他的id
             $(".treeview li").click(function () {
                 sessionStorage.menu2 = $(this).attr("id");
             })
